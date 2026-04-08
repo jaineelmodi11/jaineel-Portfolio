@@ -118,7 +118,7 @@ export function Hero() {
             {/* Photo */}
             <div className="relative w-64 h-80 md:w-80 md:h-96 lg:w-96 lg:h-[480px] overflow-hidden">
               <Image
-                src="/Jaineel_modi.jpg"
+                src="/Jaineel_modi.png"
                 alt="Jaineel Modi"
                 fill
                 className="object-cover object-top"
