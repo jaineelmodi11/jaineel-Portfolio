@@ -2,10 +2,21 @@ import { Experience } from "@/types"
 
 export const experience: Experience[] = [
   {
+    id: "rbc",
+    role: "Developer Co-op, Retail Credit Engineering & Innovation",
+    company: "Royal Bank of Canada (RBC)",
+    period: "May 2026 – Present",
+    descriptions: [
+      "Building RESTful APIs with Java and Spring Boot for RBC's Retail Credit Engineering & Innovation team, supporting personal financing and credit card platforms.",
+      "Automating CI/CD pipeline steps to reduce time-to-market and improve delivery consistency across banking services.",
+    ],
+    tags: ["Java", "Spring Boot", "REST APIs", "CI/CD"],
+  },
+  {
     id: "rise-lab",
     role: "Undergraduate Research Assistant",
     company: "RISE Lab — Queen's University",
-    period: "Sept 2025 – Present",
+    period: "Sept 2025 – Jan 2026",
     descriptions: [
       "Researching LLM-driven automated program repair to advance reliable AI developer tools, led by Prof. Yuan Tian.",
       "Built an agentic program-repair evaluation pipeline to log multi-agent trajectories and track failure points across runs.",
