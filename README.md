@@ -1,4 +1,4 @@
-# Jaineel Modi — Portfolio
+# Jaineel Modi - Portfolio
 
 Personal portfolio site at [jaineelmodi.com](https://jaineelmodi.com), built with Next.js and TypeScript.
 
