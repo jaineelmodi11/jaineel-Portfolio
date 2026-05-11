@@ -17,8 +17,6 @@ const SOCIAL = [
 export function Hero() {
   const scrollToProjects = () =>
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
-  const scrollToContact = () =>
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
 
   return (
     <section className="relative min-h-screen flex items-center px-6 md:px-16 lg:px-24 pt-24 pb-12 overflow-hidden">
@@ -78,9 +76,11 @@ export function Hero() {
             <MagneticButton variant="filled" onClick={scrollToProjects}>
               View My Work
             </MagneticButton>
-            <MagneticButton variant="outline" onClick={scrollToContact}>
-              Get In Touch
-            </MagneticButton>
+            <a href="/SWE_Jaineel_Modi_Resume.pdf" download="SWE_Jaineel_Modi_Resume.pdf">
+              <MagneticButton variant="outline">
+                Download Resume
+              </MagneticButton>
+            </a>
           </motion.div>
 
           {/* Social links */}
