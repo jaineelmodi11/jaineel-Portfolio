@@ -24,26 +24,15 @@ export const experience: Experience[] = [
     tags: ["Python", "LLMs", "Program Repair", "Research"],
   },
   {
-    id: "mulvey-2025",
+    id: "mulvey",
     role: "AI Development Intern",
     company: "Mulvey & Banani International",
-    period: "May 2025 – Aug 2025",
+    period: "June 2024 – Aug 2024 & May 2025 – Aug 2025",
     descriptions: [
-      "Shipped a GPT-4 Revit Copilot that automates 20+ BIM tasks for 80+ engineers, processing 150k+ tokens a day.",
-      "Built the agent routing layer and a Python metadata service to power multi-step Revit workflows.",
+      "Shipped a GPT-4 Revit Copilot automating 20+ BIM tasks for 80+ engineers, and automated blueprint generation with C# and .NET, saving 26 hours per project.",
+      "Built a FastAPI file-management tool used by 200+ engineers daily, plus an agent routing layer and metadata service for multi-step Revit workflows.",
     ],
-    tags: ["GPT-4", "OpenAI API", "Python", "Revit API", "C#", ".NET"],
-  },
-  {
-    id: "mulvey-2024",
-    role: "AI Development Intern",
-    company: "Mulvey & Banani International",
-    period: "June 2024 – Aug 2024",
-    descriptions: [
-      "Automated electrical blueprint generation in Revit using C# and .NET, placing 250+ components and cutting 26 hours per project.",
-      "Shipped a FastAPI file-management tool used by 200+ engineers daily and used Azure Computer Vision to organize 10k+ images.",
-    ],
-    tags: ["C#", ".NET Core", "Revit API", "Python", "FastAPI", "Azure"],
+    tags: ["GPT-4", "OpenAI API", "Python", "Revit API", "C#", ".NET", "FastAPI", "Azure"],
   },
   {
     id: "convosearch",
