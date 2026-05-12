@@ -15,11 +15,11 @@ const jetbrains = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Jaineel Modi — Software Developer",
+  title: "Jaineel Modi | Software Developer",
   description:
     "AI/ML-focused Software Developer based in Toronto, ON. Building intelligent systems that have real-world impact.",
   openGraph: {
-    title: "Jaineel Modi — Software Developer",
+    title: "Jaineel Modi | Software Developer",
     description: "AI/ML-focused Software Developer based in Toronto, ON.",
     url: "https://jaineelmodi.com",
     siteName: "Jaineel Modi",

@@ -34,7 +34,7 @@ export function Hero() {
           >
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
             <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#6b7280]">
-              Available for work &mdash; Toronto, ON
+              Available for work · Toronto, ON
             </span>
           </motion.div>
 

@@ -27,7 +27,7 @@ export function Contact() {
 
       <p className="text-[#6b7280] max-w-md mb-12 leading-relaxed">
         Open to full-time roles, internships, and interesting projects.
-        My inbox is always open — reach out and I&apos;ll get back to you.
+        My inbox is always open, so reach out and I&apos;ll get back to you.
       </p>
 
       {/* Email headline */}
@@ -66,7 +66,7 @@ export function Contact() {
       {/* Footer */}
       <div className="mt-24 border-t border-[#1f1f1f] pt-8 w-full">
         <p className="font-mono text-xs text-[#2a2a2a] tracking-widest uppercase">
-          Designed &amp; built by Jaineel Modi &mdash; {new Date().getFullYear()}
+          Designed &amp; built by Jaineel Modi, {new Date().getFullYear()}
         </p>
       </div>
     </SectionWrapper>

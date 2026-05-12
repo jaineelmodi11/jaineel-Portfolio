@@ -15,7 +15,7 @@ export const experience: Experience[] = [
   {
     id: "rise-lab",
     role: "Undergraduate Research Assistant",
-    company: "RISE Lab — Queen's University",
+    company: "RISE Lab, Queen's University",
     period: "Sept 2025 – Jan 2026",
     descriptions: [
       "Researched LLM-driven automated program repair under Prof. Yuan Tian, focused on making AI developer tools more reliable.",

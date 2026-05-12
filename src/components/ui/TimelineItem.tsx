@@ -37,7 +37,7 @@ export function TimelineItem({ experience, index, isLast, isVisible }: TimelineI
         <ul className="space-y-1 mb-4">
           {experience.descriptions.map((d, i) => (
             <li key={i} className="text-[#6b7280] text-sm leading-relaxed flex gap-2">
-              <span className="text-amber mt-1 flex-shrink-0">—</span>
+              <span className="text-amber mt-1 flex-shrink-0">·</span>
               {d}
             </li>
           ))}
