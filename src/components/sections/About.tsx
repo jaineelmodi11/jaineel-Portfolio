@@ -52,11 +52,11 @@ export function About() {
               <div className="text-xs font-mono uppercase tracking-widest text-[#6b7280] mt-1">Years Exp.</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-amber font-mono">5</div>
+              <div className="text-3xl font-bold text-amber font-mono">6</div>
               <div className="text-xs font-mono uppercase tracking-widest text-[#6b7280] mt-1">Internships</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-amber font-mono">3</div>
+              <div className="text-3xl font-bold text-amber font-mono">10+</div>
               <div className="text-xs font-mono uppercase tracking-widest text-[#6b7280] mt-1">Projects</div>
             </div>
           </div>
