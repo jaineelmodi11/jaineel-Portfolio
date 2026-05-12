@@ -29,24 +29,6 @@ export function Skills() {
         <MarqueeTrack items={marqueeRow2} direction="right" speed={25} />
       </div>
 
-      {/* Category pills */}
-      <div className="mt-16 flex flex-wrap gap-3">
-        {[
-          { label: "Languages", count: 9 },
-          { label: "Frontend", count: 6 },
-          { label: "Backend", count: 5 },
-          { label: "AI / ML", count: 7 },
-          { label: "DevOps & DB", count: 8 },
-        ].map(({ label, count }) => (
-          <div
-            key={label}
-            className="flex items-center gap-3 px-5 py-3 border border-[#1f1f1f] bg-[#111111]"
-          >
-            <span className="font-mono text-sm text-[#f5f5f5]">{label}</span>
-            <span className="font-mono text-xs text-amber bg-amber/10 px-1.5 py-0.5 rounded">{count}</span>
-          </div>
-        ))}
-      </div>
     </SectionWrapper>
   )
 }
