@@ -58,7 +58,7 @@ export function Hero() {
         <figure className="lg:col-span-5 lg:pt-3">
           <div className="relative aspect-[4/5] w-full max-w-sm lg:max-w-none overflow-hidden bg-paper-deep">
             <Image
-              src="/Jaineel_modi.png"
+              src="/headshot.jpg"
               alt="Jaineel Modi"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"
