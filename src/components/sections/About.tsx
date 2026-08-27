@@ -57,7 +57,7 @@ export function About() {
                 {job.descriptions.map((line) => (
                   <li
                     key={line}
-                    className="text-ink-soft leading-relaxed pl-5 -indent-5 before:content-['—'] before:mr-2 before:text-ink-muted"
+                    className="text-ink-soft leading-relaxed pl-5 -indent-5 before:content-['–'] before:mr-2 before:text-ink-muted"
                   >
                     {line}
                   </li>

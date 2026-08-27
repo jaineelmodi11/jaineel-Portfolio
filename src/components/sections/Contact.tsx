@@ -58,7 +58,7 @@ export function Contact() {
       {/* Colophon */}
       <div className="rule mt-20" />
       <div className="flex flex-wrap justify-between gap-4 pt-5">
-        <span className="caption">Jaineel Modi — Toronto</span>
+        <span className="caption">Jaineel Modi, Toronto</span>
         <span className="caption">Set in Instrument Serif &amp; Inter</span>
       </div>
     </footer>

@@ -67,7 +67,7 @@ export function Hero() {
             />
           </div>
           <figcaption className="caption mt-3">
-            Fig. 1 — Queen&apos;s University, Bachelor of Computing (AI)
+            Queen&apos;s University, Bachelor of Computer Science (AI)
           </figcaption>
         </figure>
       </div>
