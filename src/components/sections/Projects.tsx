@@ -1,41 +1,64 @@
-"use client"
-
-import { useRef } from "react"
-import { SectionWrapper } from "@/components/ui/SectionWrapper"
-import { AmberDivider } from "@/components/ui/AmberDivider"
-import { ProjectCard } from "@/components/ui/ProjectCard"
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver"
 import { projects } from "@/data/projects"
 
 export function Projects() {
-  const ref = useRef<HTMLDivElement>(null)
-  const isVisible = useIntersectionObserver(ref as React.RefObject<Element>)
-
   return (
-    <SectionWrapper id="projects">
-      {/* Section number */}
-      <span
-        className="absolute top-8 right-6 md:right-16 lg:right-24 text-[120px] font-bold font-mono leading-none select-none pointer-events-none"
-        style={{ color: "rgba(255,255,255,0.025)" }}
-        aria-hidden
-      >
-        03
-      </span>
-
-      <div className="mb-3">
-        <span className="font-mono text-xs uppercase tracking-[0.3em] text-amber">Projects</span>
+    <section id="work" className="px-6 md:px-12 lg:px-20 py-20 lg:py-28">
+      <div className="flex items-baseline justify-between gap-6 pb-5">
+        <h2 className="font-[family-name:var(--font-display)] text-ink text-[clamp(32px,5vw,64px)] leading-none tracking-[-0.02em]">
+          Selected work
+        </h2>
+        <span className="caption whitespace-nowrap">
+          {String(projects.length).padStart(2, "0")} projects
+        </span>
       </div>
-      <h2 className="text-4xl md:text-6xl font-bold text-[#f5f5f5] tracking-tight mb-2">
-        Selected Work
-      </h2>
-      <p className="text-[#6b7280] mb-6">A few things I&apos;ve built.</p>
-      <AmberDivider short className="mb-16" />
+      <div className="rule" />
 
-      <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <ol>
         {projects.map((project, i) => (
-          <ProjectCard key={project.id} project={project} index={i} isVisible={isVisible} />
+          <li key={project.id}>
+            <article className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-9 lg:py-11 border-b border-rule">
+              <div className="md:col-span-1">
+                <span className="caption">{String(i + 1).padStart(2, "0")}</span>
+              </div>
+
+              <div className="md:col-span-4">
+                <h3 className="font-[family-name:var(--font-display)] text-ink text-3xl md:text-4xl leading-tight tracking-[-0.01em]">
+                  {project.title}
+                </h3>
+                <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-rule text-sm font-medium text-accent"
+                    >
+                      Source
+                    </a>
+                  )}
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-rule text-sm font-medium text-accent"
+                    >
+                      Live
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              <div className="md:col-span-7">
+                <p className="text-ink-soft leading-relaxed max-w-2xl">
+                  {project.description}
+                </p>
+                <p className="caption mt-4">{project.tech.join(" · ")}</p>
+              </div>
+            </article>
+          </li>
         ))}
-      </div>
-    </SectionWrapper>
+      </ol>
+    </section>
   )
 }

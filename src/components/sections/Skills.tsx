@@ -1,34 +1,28 @@
-import { SectionWrapper } from "@/components/ui/SectionWrapper"
-import { AmberDivider } from "@/components/ui/AmberDivider"
-import { MarqueeTrack } from "@/components/ui/MarqueeTrack"
-import { marqueeRow1, marqueeRow2 } from "@/data/skills"
+import { skillCategories } from "@/data/skills"
 
 export function Skills() {
   return (
-    <SectionWrapper id="skills">
-      {/* Section number */}
-      <span
-        className="absolute top-8 right-6 md:right-16 lg:right-24 text-[120px] font-bold font-mono leading-none select-none pointer-events-none"
-        style={{ color: "rgba(255,255,255,0.025)" }}
-        aria-hidden
-      >
-        02
-      </span>
-
-      <div className="mb-3">
-        <span className="font-mono text-xs uppercase tracking-[0.3em] text-amber">Skills</span>
+    <section id="skills" className="px-6 md:px-12 lg:px-20 py-20 lg:py-28">
+      <div className="flex items-baseline justify-between gap-6 pb-5">
+        <h2 className="font-[family-name:var(--font-display)] text-ink text-[clamp(32px,5vw,64px)] leading-none tracking-[-0.02em]">
+          Tools
+        </h2>
       </div>
-      <h2 className="text-4xl md:text-6xl font-bold text-[#f5f5f5] tracking-tight mb-6">
-        Tech Stack
-      </h2>
-      <AmberDivider short className="mb-16" />
+      <div className="rule" />
 
-      {/* Marquee bands */}
-      <div className="border-y border-[#1f1f1f] py-6 space-y-6 -mx-6 md:-mx-16 lg:-mx-24 px-0">
-        <MarqueeTrack items={marqueeRow1} direction="left" speed={30} />
-        <MarqueeTrack items={marqueeRow2} direction="right" speed={25} />
-      </div>
-
-    </SectionWrapper>
+      <dl className="grid grid-cols-1 md:grid-cols-12 gap-y-0">
+        {skillCategories.map((category) => (
+          <div
+            key={category.label}
+            className="md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-6 border-b border-rule"
+          >
+            <dt className="md:col-span-3 caption pt-1">{category.label}</dt>
+            <dd className="md:col-span-9 text-ink-soft leading-relaxed">
+              {category.skills.join(", ")}
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </section>
   )
 }

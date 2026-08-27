@@ -1,73 +1,66 @@
-"use client"
-
-import { motion } from "framer-motion"
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons"
-import { SectionWrapper } from "@/components/ui/SectionWrapper"
-import { AmberDivider } from "@/components/ui/AmberDivider"
+
+const LINKS = [
+  { label: "GitHub", href: "https://github.com/jaineelmodi11", Icon: GithubIcon },
+  { label: "LinkedIn", href: "https://linkedin.com/in/jaineelmodi", Icon: LinkedinIcon },
+]
 
 export function Contact() {
   return (
-    <SectionWrapper id="contact" className="flex flex-col items-center text-center">
-      {/* Section number */}
-      <span
-        className="absolute top-8 right-6 md:right-16 lg:right-24 text-[120px] font-bold font-mono leading-none select-none pointer-events-none"
-        style={{ color: "rgba(255,255,255,0.025)" }}
-        aria-hidden
-      >
-        04
-      </span>
+    <footer id="contact" className="px-6 md:px-12 lg:px-20 pt-20 lg:pt-28 pb-16">
+      <div className="rule" />
 
-      <div className="mb-3">
-        <span className="font-mono text-xs uppercase tracking-[0.3em] text-amber">Contact</span>
-      </div>
-      <h2 className="text-4xl md:text-6xl font-bold text-[#f5f5f5] tracking-tight mb-6">
-        Let&apos;s Talk
-      </h2>
-      <AmberDivider short className="mb-10 mx-auto" />
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 pt-14">
+        <div className="lg:col-span-7">
+          <h2 className="font-[family-name:var(--font-display)] text-ink text-[clamp(32px,5.5vw,72px)] leading-[1.05] tracking-[-0.02em]">
+            Open to full-time
+            <br />
+            roles and internships.
+          </h2>
+          <a
+            href="mailto:jaineelmodi04@gmail.com"
+            className="link-rule inline-block mt-8 text-xl md:text-2xl text-ink"
+          >
+            jaineelmodi04@gmail.com
+          </a>
+          <p className="caption mt-4">647 275 5055</p>
+        </div>
 
-      <p className="text-[#6b7280] max-w-md mb-12 leading-relaxed">
-        Open to full-time roles and internships. Email is the fastest way to reach me.
-      </p>
-
-      {/* Email headline */}
-      <a
-        href="mailto:jaineelmodi04@gmail.com"
-        className="group block text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] hover:text-amber transition-colors duration-300 mb-2"
-      >
-        jaineelmodi04@gmail.com
-        <span className="block h-px w-0 group-hover:w-full bg-amber transition-all duration-500 ease-out mt-2" />
-      </a>
-
-      <p className="font-mono text-sm text-[#6b7280] mb-14">647-275-5055</p>
-
-      {/* Socials */}
-      <div className="flex items-center gap-6">
-        <a
-          href="https://github.com/jaineelmodi11"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 font-mono text-sm text-[#6b7280] hover:text-amber transition-colors duration-200"
-        >
-          <GithubIcon size={16} />
-          GitHub
-        </a>
-        <a
-          href="https://linkedin.com/in/jaineelmodi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 font-mono text-sm text-[#6b7280] hover:text-amber transition-colors duration-200"
-        >
-          <LinkedinIcon size={16} />
-          LinkedIn
-        </a>
+        <div className="lg:col-span-5 lg:pt-4">
+          <span className="caption">Elsewhere</span>
+          <ul className="mt-4 space-y-3">
+            {LINKS.map(({ label, href, Icon }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-rule inline-flex items-center gap-3 text-ink"
+                >
+                  <Icon size={16} />
+                  {label}
+                </a>
+              </li>
+            ))}
+            <li>
+              <a
+                href="/SWE_Jaineel_Modi_Resume.pdf"
+                download
+                className="link-rule inline-block text-ink"
+              >
+                Résumé (PDF)
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      {/* Footer */}
-      <div className="mt-24 border-t border-[#1f1f1f] pt-8 w-full">
-        <p className="font-mono text-xs text-[#2a2a2a] tracking-widest uppercase">
-          Designed &amp; built by Jaineel Modi, {new Date().getFullYear()}
-        </p>
+      {/* Colophon */}
+      <div className="rule mt-20" />
+      <div className="flex flex-wrap justify-between gap-4 pt-5">
+        <span className="caption">Jaineel Modi — Toronto</span>
+        <span className="caption">Set in Instrument Serif &amp; Inter</span>
       </div>
-    </SectionWrapper>
+    </footer>
   )
 }

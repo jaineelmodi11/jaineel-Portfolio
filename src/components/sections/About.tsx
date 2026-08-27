@@ -1,85 +1,72 @@
-"use client"
-
-import { useRef } from "react"
-import { SectionWrapper } from "@/components/ui/SectionWrapper"
-import { AmberDivider } from "@/components/ui/AmberDivider"
-import { TimelineItem } from "@/components/ui/TimelineItem"
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver"
 import { experience } from "@/data/experience"
 
 export function About() {
-  const ref = useRef<HTMLDivElement>(null)
-  const isVisible = useIntersectionObserver(ref as React.RefObject<Element>)
-
   return (
-    <SectionWrapper id="about">
-      {/* Section number */}
-      <span
-        className="absolute top-8 right-6 md:right-16 lg:right-24 text-[120px] font-bold font-mono leading-none select-none pointer-events-none"
-        style={{ color: "rgba(255,255,255,0.025)" }}
-        aria-hidden
-      >
-        01
-      </span>
-
-      <div className="mb-3">
-        <span className="font-mono text-xs uppercase tracking-[0.3em] text-amber">About</span>
-      </div>
-      <h2 className="text-4xl md:text-6xl font-bold text-[#f5f5f5] tracking-tight mb-6">
-        Who I Am
-      </h2>
-      <AmberDivider short className="mb-16" />
-
-      <div ref={ref} className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-        {/* Bio */}
-        <div>
-          <p className="text-2xl md:text-3xl font-light text-[#f5f5f5] leading-relaxed mb-6">
-            Hi, I&apos;m Jaineel.
-          </p>
-          <p className="text-[#6b7280] text-lg leading-relaxed mb-6">
+    <section id="about" className="px-6 md:px-12 lg:px-20 py-20 lg:py-28">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+        {/* Standfirst, set larger than body the way a lede runs. */}
+        <div className="lg:col-span-5">
+          <h2 className="font-[family-name:var(--font-display)] text-ink text-[clamp(32px,5vw,64px)] leading-none tracking-[-0.02em]">
+            About
+          </h2>
+          <p className="mt-8 text-xl leading-relaxed text-ink">
             A volleyball player, a ramen connoisseur, and a programmer.
           </p>
-          <p className="text-[#6b7280] leading-relaxed">
-            I&apos;m a software developer in Toronto, currently on RBC&apos;s retail credit
-            engineering team writing Java and Spring Boot APIs. Before that I researched
-            LLM-driven program repair at Queen&apos;s RISE Lab, and built a GPT-4 Revit copilot
-            at Mulvey &amp; Banani that saved 26 hours per project. The one I&apos;m proudest of
-            is AudioMark, a practice player for dancers with around 5,000 users, which I still
+          <p className="mt-5 leading-relaxed text-ink-soft">
+            I study computer science at Queen&apos;s University. Before RBC I
+            researched LLM-driven program repair at the RISE Lab, and built a
+            GPT-4 Revit copilot at Mulvey &amp; Banani that saved 26 hours per
+            project. The work I&apos;m proudest of is AudioMark, which I still
             maintain.
           </p>
-
-          <div className="mt-10 flex gap-8">
-            <div>
-              <div className="text-3xl font-bold text-amber font-mono">1.5+</div>
-              <div className="text-xs font-mono uppercase tracking-widest text-[#6b7280] mt-1">Years Exp.</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-amber font-mono">6</div>
-              <div className="text-xs font-mono uppercase tracking-widest text-[#6b7280] mt-1">Internships</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-amber font-mono">10+</div>
-              <div className="text-xs font-mono uppercase tracking-widest text-[#6b7280] mt-1">Projects</div>
-            </div>
-          </div>
+          <p className="mt-5 leading-relaxed text-ink-soft">
+            Lately I&apos;ve been contributing upstream: two documentation fixes
+            to{" "}
+            <a
+              href="https://github.com/vercel/next.js/pull/97559"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-rule text-ink"
+            >
+              Next.js
+            </a>
+            , found by auditing every error link the framework hands its users
+            against the pages that actually exist.
+          </p>
         </div>
 
-        {/* Timeline */}
-        <div>
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#6b7280] mb-8">Experience</p>
-          <div className="space-y-0">
-            {experience.map((exp, i) => (
-              <TimelineItem
-                key={exp.id}
-                experience={exp}
-                index={i}
-                isLast={i === experience.length - 1}
-                isVisible={isVisible}
-              />
-            ))}
+        {/* Experience, set as a dated list rather than a timeline graphic. */}
+        <div className="lg:col-span-7">
+          <div className="flex items-baseline justify-between gap-6 pb-4">
+            <span className="caption">Experience</span>
+            <span className="caption">{experience.length} roles</span>
           </div>
+          <div className="rule" />
+
+          {experience.map((job) => (
+            <article key={job.id} className="py-8 border-b border-rule">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                <h3 className="font-[family-name:var(--font-display)] text-ink text-2xl leading-tight">
+                  {job.company}
+                </h3>
+                <span className="caption whitespace-nowrap">{job.period}</span>
+              </div>
+              <p className="mt-1 text-sm text-ink-muted">{job.role}</p>
+              <ul className="mt-4 space-y-2">
+                {job.descriptions.map((line) => (
+                  <li
+                    key={line}
+                    className="text-ink-soft leading-relaxed pl-5 -indent-5 before:content-['—'] before:mr-2 before:text-ink-muted"
+                  >
+                    {line}
+                  </li>
+                ))}
+              </ul>
+              <p className="caption mt-4">{job.tags.join(" · ")}</p>
+            </article>
+          ))}
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }

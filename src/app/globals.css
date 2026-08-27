@@ -1,75 +1,66 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Colors */
-  --color-bg: #080808;
-  --color-bg-card: #111111;
-  --color-bg-border: #1f1f1f;
-  --color-amber: #f59e0b;
-  --color-amber-dark: #d97706;
-  --color-text-primary: #f5f5f5;
-  --color-text-muted: #6b7280;
-  --color-text-faint: #2a2a2a;
+  /* Paper and ink */
+  --color-paper: #faf8f3;
+  --color-paper-deep: #f2eee5;
+  --color-ink: #14110e;
+  --color-ink-soft: #4a423a;
+  --color-ink-muted: #857a6c;
+  --color-rule: #ddd5c7;
+  --color-accent: #9c4221;
 
   /* Fonts */
+  --font-display: var(--font-instrument), Georgia, serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-mono: var(--font-jetbrains), monospace;
-
-  /* Animations */
-  --animate-marquee: marquee 35s linear infinite;
-  --animate-marquee-reverse: marquee-reverse 35s linear infinite;
-  --animate-blink: blink 1s step-end infinite;
-  --animate-fade-up: fade-up 0.7s ease forwards;
-  --animate-float: float 3s ease-in-out infinite;
 }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-@keyframes marquee-reverse {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-@keyframes fade-up {
-  from { opacity: 0; transform: translateY(32px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-8px); }
-}
-
-/* Base */
 html {
   scroll-behavior: smooth;
-  background-color: #080808;
+  background-color: #faf8f3;
 }
 
 body {
-  background-color: #080808;
-  color: #f5f5f5;
+  background-color: #faf8f3;
+  color: #14110e;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
 
-::selection {
-  background-color: #f59e0b;
-  color: #080808;
+/* Editorial rules: hairlines that read as print, not as UI borders. */
+.rule {
+  border-top: 1px solid var(--color-rule);
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar { width: 3px; }
-::-webkit-scrollbar-track { background: #080808; }
-::-webkit-scrollbar-thumb { background: #f59e0b; border-radius: 2px; }
+/* Figure numbers and metadata, set small and tracked like a caption. */
+.caption {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
 
-/* Smooth scroll for anchor links */
-* { scroll-behavior: smooth; }
+/* A link that underlines from the baseline on hover, the way a printed
+   cross-reference would be marked up. */
+.link-rule {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.35s ease;
+}
+.link-rule:hover {
+  background-size: 100% 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .link-rule { transition: none; }
+}
+
+::selection {
+  background: #14110e;
+  color: #faf8f3;
+}
