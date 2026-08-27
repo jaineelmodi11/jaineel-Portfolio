@@ -13,7 +13,7 @@ export function About() {
             A volleyball player, a ramen connoisseur, and a programmer.
           </p>
           <p className="mt-5 leading-relaxed text-ink-soft">
-            I&apos;m reading for a Bachelor of Computing in AI at Queen&apos;s
+            I&apos;m studying Computer Science with an AI specialization at Queen&apos;s
             University, graduating May 2028. Before RBC I traced failures in
             multi-agent LLM coding systems at the RISE Lab, and built a GPT-4
             Revit copilot at Mulvey &amp; Banani that saved 26 hours per project.
