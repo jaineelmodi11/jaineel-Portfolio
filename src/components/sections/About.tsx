@@ -37,13 +37,15 @@ export function About() {
             Hi, I&apos;m Jaineel.
           </p>
           <p className="text-[#6b7280] text-lg leading-relaxed mb-6">
-            A volleyball player, a ramen noodles connoisseur, and most profoundly a programming fanatic.
-            I love bringing people together through technology and solving problems to make life easier for others.
+            A volleyball player, a ramen connoisseur, and a programmer.
           </p>
           <p className="text-[#6b7280] leading-relaxed">
-            I&apos;m a software developer and AI/ML engineer based in Toronto, ON, with a focus on
-            building intelligent systems that have real-world impact. From LLM-powered tools to
-            cross-platform mobile apps, I care about craft and usefulness in equal measure.
+            I&apos;m a software developer in Toronto, currently on RBC&apos;s retail credit
+            engineering team writing Java and Spring Boot APIs. Before that I researched
+            LLM-driven program repair at Queen&apos;s RISE Lab, and built a GPT-4 Revit copilot
+            at Mulvey &amp; Banani that saved 26 hours per project. The one I&apos;m proudest of
+            is AudioMark, a practice player for dancers with around 5,000 users, which I still
+            maintain.
           </p>
 
           <div className="mt-10 flex gap-8">

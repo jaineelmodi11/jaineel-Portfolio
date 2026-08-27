@@ -26,8 +26,7 @@ export function Contact() {
       <AmberDivider short className="mb-10 mx-auto" />
 
       <p className="text-[#6b7280] max-w-md mb-12 leading-relaxed">
-        Open to full-time roles, internships, and interesting projects.
-        My inbox is always open, so reach out and I&apos;ll get back to you.
+        Open to full-time roles and internships. Email is the fastest way to reach me.
       </p>
 
       {/* Email headline */}
