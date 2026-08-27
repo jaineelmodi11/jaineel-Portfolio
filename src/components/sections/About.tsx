@@ -3,9 +3,9 @@ import { experience } from "@/data/experience"
 export function About() {
   return (
     <section id="about" className="px-6 md:px-12 lg:px-20 py-20 lg:py-28">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 lg:items-start">
         {/* Standfirst, set larger than body the way a lede runs. */}
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-5 lg:sticky lg:top-24 lg:self-start">
           <h2 className="font-[family-name:var(--font-display)] text-ink text-[clamp(32px,5vw,64px)] leading-none tracking-[-0.02em]">
             About
           </h2>

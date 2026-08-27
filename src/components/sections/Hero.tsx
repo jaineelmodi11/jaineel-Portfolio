@@ -73,7 +73,7 @@ export function Hero() {
       </div>
 
       {/* Pull quote: the one number worth stopping on. */}
-      <div className="mt-24 lg:mt-32">
+      <div className="mt-20 lg:mt-24">
         <div className="rule" />
         <blockquote className="py-10 lg:py-14 max-w-4xl">
           <p className="font-[family-name:var(--font-display)] text-ink leading-[1.1] tracking-[-0.01em] text-[clamp(30px,4.4vw,58px)]">

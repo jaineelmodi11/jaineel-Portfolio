@@ -2,7 +2,7 @@ import { projects } from "@/data/projects"
 
 export function Projects() {
   return (
-    <section id="work" className="px-6 md:px-12 lg:px-20 py-20 lg:py-28">
+    <section id="work" className="px-6 md:px-12 lg:px-20 pt-14 lg:pt-16 pb-20 lg:pb-24">
       <div className="flex items-baseline justify-between gap-6 pb-5">
         <h2 className="font-[family-name:var(--font-display)] text-ink text-[clamp(32px,5vw,64px)] leading-none tracking-[-0.02em]">
           Selected work
@@ -16,9 +16,9 @@ export function Projects() {
       <ol>
         {projects.map((project, i) => (
           <li key={project.id}>
-            <article className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-9 lg:py-11 border-b border-rule">
+            <article className="group grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-9 lg:py-11 border-b border-rule transition-colors duration-300 hover:bg-paper-deep/60 md:px-4 md:-mx-4">
               <div className="md:col-span-1">
-                <span className="caption">{String(i + 1).padStart(2, "0")}</span>
+                <span className="caption transition-colors duration-300 group-hover:text-accent">{String(i + 1).padStart(2, "0")}</span>
               </div>
 
               <div className="md:col-span-4">
