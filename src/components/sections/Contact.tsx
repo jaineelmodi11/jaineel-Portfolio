@@ -23,7 +23,7 @@ export function Contact() {
           >
             jaineelmodi04@gmail.com
           </a>
-          <p className="caption mt-4">647 275 5055</p>
+          <p className="caption mt-4">647 274 5055</p>
         </div>
 
         <div className="lg:col-span-5 lg:pt-4">

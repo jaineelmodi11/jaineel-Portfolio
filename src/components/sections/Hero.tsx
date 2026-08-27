@@ -7,7 +7,7 @@ export function Hero() {
       <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 pb-4">
         <span className="caption">Jaineel Modi</span>
         <span className="caption">Toronto, Ontario</span>
-        <span className="caption">Available May 2027</span>
+        <span className="caption">Graduating May 2028</span>
       </div>
       <div className="rule" />
 
@@ -23,7 +23,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-10 max-w-xl text-lg leading-relaxed text-ink-soft">
-            I&apos;m on RBC&apos;s retail credit engineering team writing Java and
+            I&apos;m on RBC&apos;s mortgage approval platform team writing Java and
             Spring Boot APIs. On my own time I maintain{" "}
             <a
               href="#work"
@@ -67,7 +67,7 @@ export function Hero() {
             />
           </div>
           <figcaption className="caption mt-3">
-            Fig. 1 — Queen&apos;s University, Computer Science
+            Fig. 1 — Queen&apos;s University, Bachelor of Computing (AI)
           </figcaption>
         </figure>
       </div>

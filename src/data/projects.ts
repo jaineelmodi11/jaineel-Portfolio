@@ -5,8 +5,8 @@ export const projects: Project[] = [
     id: "audiomark",
     title: "AudioMark",
     description:
-      "Practice player for dancers. Loop a section, slow it down, and both settings save per track. Around 5,000 users on Google Play.",
-    tech: ["Flutter", "Dart", "Android", "iOS"],
+      "Co-built a practice player for dancers. Loop a section, slow it down, and both settings save per track. 5,000+ active users on Google Play.",
+    tech: ["Flutter", "Dart", "just_audio", "iOS / Android"],
     github: "https://github.com/jaineelmodi11/audiomark",
     live: "https://play.google.com/store/apps/details?id=com.ayushshah.audiomark",
   },
@@ -22,16 +22,16 @@ export const projects: Project[] = [
     id: "tossit",
     title: "Tossit 2.0",
     description:
-      "Photograph an item and an ONNX model sorts it into the right recycling bin. History kept per user.",
-    tech: ["Next.js 16", "React 19", "ONNX", "Firebase"],
+      "First place at SatecHack. A VGG16 classifier sorts a photographed item into the right recycling bin at 97% accuracy, served through ONNX and FastAPI.",
+    tech: ["Next.js", "TypeScript", "FastAPI", "ONNX", "VGG16"],
     github: "https://github.com/jaineelmodi11/Tossit-2.0",
   },
   {
     id: "moviematch",
     title: "MovieMatchApp",
     description:
-      "Learns your taste from swipes and recommends films. Social watchlists sync in real time.",
-    tech: ["Swift", "SwiftUI", "Firebase", "Flask"],
+      "Swipe-based recommendation engine that learns taste from like and dislike signals. Watchlists sync in real time.",
+    tech: ["SwiftUI", "Firebase", "Flask", "PostgreSQL"],
     github: "https://github.com/jaineelmodi11/MovieMatchApp",
   },
   {
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     id: "minilm",
     title: "MiniLM Fine-Tuned",
     description:
-      "Fine-tuned all-MiniLM-L6-v2 on SNLI and MNLI for stronger natural-language-inference embeddings.",
+      "Fine-tuned all-MiniLM-L6-v2 on SNLI and MNLI with an NLI softmax loss, reaching 91.2% validation accuracy.",
     tech: ["Python", "PyTorch", "Transformers"],
     github: "https://github.com/jaineelmodi11/MiniLM-FineTuned-SNLI-MNLI",
   },

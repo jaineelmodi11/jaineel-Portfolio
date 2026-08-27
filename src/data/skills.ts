@@ -3,33 +3,18 @@ import { SkillCategory } from "@/types"
 export const skillCategories: SkillCategory[] = [
   {
     label: "Languages",
-    skills: ["Python", "TypeScript", "JavaScript", "Java", "C++", "C#", "SQL", "Swift"],
+    skills: ["Python", "Java", "C#", "TypeScript", "JavaScript", "Dart", "Swift", "SQL"],
   },
   {
-    label: "Frontend",
-    skills: ["React", "Next.js", "Tailwind CSS", "Flutter", "Material-UI", "Expo"],
-  },
-  {
-    label: "Backend",
-    skills: ["Node.js", "Express.js", "Flask", "FastAPI", ".NET Core"],
+    label: "Frameworks",
+    skills: ["Spring Boot", "React", "Next.js", "Node.js", "Flask", "FastAPI", ".NET Core", "Flutter"],
   },
   {
     label: "AI / ML",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Vision Models", "KNN"],
+    skills: ["OpenAI API", "LangChain", "PyTorch", "TensorFlow", "Hugging Face", "ONNX", "MCP"],
   },
   {
-    label: "DevOps & DB",
-    skills: ["Docker", "Kubernetes", "Azure", "AWS", "MySQL", "PostgreSQL", "MongoDB", "GitHub"],
+    label: "Infrastructure",
+    skills: ["AWS", "Azure", "Docker", "Kubernetes", "Kafka", "PostgreSQL", "MongoDB", "CI/CD"],
   },
-]
-
-// Flat list for marquee — row 1 and row 2 split
-export const marqueeRow1 = [
-  "Python", "TypeScript", "React", "Next.js", "Node.js", "Swift",
-  "TensorFlow", "PyTorch", "Flask", "FastAPI", "Tailwind CSS", "Docker",
-]
-
-export const marqueeRow2 = [
-  "Azure", "AWS", "PostgreSQL", "MongoDB", "Scikit-learn", "Pandas",
-  ".NET Core", "Kubernetes", "Express.js", "Flutter", "C#", "NumPy",
 ]

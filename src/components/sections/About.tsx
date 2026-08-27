@@ -13,11 +13,12 @@ export function About() {
             A volleyball player, a ramen connoisseur, and a programmer.
           </p>
           <p className="mt-5 leading-relaxed text-ink-soft">
-            I study computer science at Queen&apos;s University. Before RBC I
-            researched LLM-driven program repair at the RISE Lab, and built a
-            GPT-4 Revit copilot at Mulvey &amp; Banani that saved 26 hours per
-            project. The work I&apos;m proudest of is AudioMark, which I still
-            maintain.
+            I&apos;m reading for a Bachelor of Computing in AI at Queen&apos;s
+            University, graduating May 2028. Before RBC I traced failures in
+            multi-agent LLM coding systems at the RISE Lab, and built a GPT-4
+            Revit copilot at Mulvey &amp; Banani that saved 26 hours per project.
+            The work I&apos;m proudest of is AudioMark, which I co-built and
+            still maintain.
           </p>
           <p className="mt-5 leading-relaxed text-ink-soft">
             Lately I&apos;ve been contributing upstream: two documentation fixes
