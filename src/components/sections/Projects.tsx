@@ -43,7 +43,9 @@ export function Projects() {
                       rel="noopener noreferrer"
                       className="link-rule text-sm font-medium text-accent"
                     >
-                      Live
+                      {project.live.includes("play.google.com")
+                        ? "Play Store"
+                        : "Live demo"}
                     </a>
                   )}
                 </div>

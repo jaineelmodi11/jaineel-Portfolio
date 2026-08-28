@@ -17,6 +17,7 @@ export const projects: Project[] = [
       "A–B section looping for any Dart audio player, extracted from AudioMark. Handles the seek storms that make looping hard to get right.",
     tech: ["Dart", "Flutter"],
     github: "https://github.com/jaineelmodi11/section_loop",
+    live: "https://jaineelmodi11.github.io/section_loop/",
   },
   {
     id: "tossit",
