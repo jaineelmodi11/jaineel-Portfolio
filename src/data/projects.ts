@@ -22,7 +22,7 @@ export const projects: Project[] = [
     id: "tossit",
     title: "Tossit 2.0",
     description:
-      "First place at SatecHack. A VGG16 classifier sorts a photographed item into the right recycling bin at 97% accuracy, served through ONNX and FastAPI.",
+      "First place at SatecHack. Photograph an item and a VGG16 classifier sorts it into the right recycling bin, served through ONNX and FastAPI.",
     tech: ["Next.js", "TypeScript", "FastAPI", "ONNX", "VGG16"],
     github: "https://github.com/jaineelmodi11/Tossit-2.0",
   },
