@@ -26,6 +26,7 @@ export const projects: Project[] = [
       "First place at SatecHack. Photograph an item and a VGG16 classifier sorts it into the right recycling bin, served through ONNX and FastAPI.",
     tech: ["Next.js", "TypeScript", "FastAPI", "ONNX", "VGG16"],
     github: "https://github.com/jaineelmodi11/Tossit-2.0",
+    demo: "https://raw.githubusercontent.com/jaineelmodi11/Tossit-2.0/main/docs/benchmark.svg",
   },
   {
     id: "moviematch",
@@ -34,6 +35,7 @@ export const projects: Project[] = [
       "Swipe-based recommendation engine that learns taste from like and dislike signals. Watchlists sync in real time.",
     tech: ["SwiftUI", "Firebase", "Flask", "PostgreSQL"],
     github: "https://github.com/jaineelmodi11/MovieMatchApp",
+    demo: "https://raw.githubusercontent.com/jaineelmodi11/MovieMatchApp/main/docs/demo.gif",
   },
   {
     id: "recsend",
@@ -42,6 +44,7 @@ export const projects: Project[] = [
       "API testing from one YAML file. Declare a request and the response you expect, get a pass/fail that exits non-zero for CI.",
     tech: ["Python", "Click", "YAML", "CI/CD"],
     github: "https://github.com/jaineelmodi11/recsend-developer-focused-CLI",
+    demo: "https://raw.githubusercontent.com/jaineelmodi11/recsend-developer-focused-CLI/main/docs/demo.svg",
   },
   {
     id: "minilm",
@@ -50,5 +53,6 @@ export const projects: Project[] = [
       "Fine-tuned all-MiniLM-L6-v2 on SNLI and MNLI with an NLI softmax loss, reaching 91.2% validation accuracy.",
     tech: ["Python", "PyTorch", "Transformers"],
     github: "https://github.com/jaineelmodi11/MiniLM-FineTuned-SNLI-MNLI",
+    demo: "https://raw.githubusercontent.com/jaineelmodi11/MiniLM-FineTuned-SNLI-MNLI/main/docs/benchmark.svg",
   },
 ]

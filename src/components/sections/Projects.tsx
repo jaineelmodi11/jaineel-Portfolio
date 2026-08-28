@@ -36,6 +36,16 @@ export function Projects() {
                       Source
                     </a>
                   )}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-rule text-sm font-medium text-accent"
+                    >
+                      Demo
+                    </a>
+                  )}
                   {project.live && (
                     <a
                       href={project.live}

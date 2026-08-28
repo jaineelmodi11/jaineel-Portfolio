@@ -14,6 +14,7 @@ export interface Project {
   tech: string[]
   github?: string
   live?: string
+  demo?: string
 }
 
 export interface SkillCategory {
