@@ -53,17 +53,21 @@ export function About() {
                 <span className="caption whitespace-nowrap">{job.period}</span>
               </div>
               <p className="mt-1 text-sm text-ink-muted">{job.role}</p>
-              <ul className="mt-4 space-y-2">
-                {job.descriptions.map((line) => (
-                  <li
-                    key={line}
-                    className="text-ink-soft leading-relaxed pl-5 -indent-5 before:content-['–'] before:mr-2 before:text-ink-muted"
-                  >
-                    {line}
-                  </li>
-                ))}
-              </ul>
-              <p className="caption mt-4">{job.tags.join(" · ")}</p>
+              {job.descriptions.length > 0 && (
+                <ul className="mt-4 space-y-2">
+                  {job.descriptions.map((line) => (
+                    <li
+                      key={line}
+                      className="text-ink-soft leading-relaxed pl-5 -indent-5 before:content-['–'] before:mr-2 before:text-ink-muted"
+                    >
+                      {line}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {job.tags.length > 0 && (
+                <p className="caption mt-4">{job.tags.join(" · ")}</p>
+              )}
             </article>
           ))}
         </div>

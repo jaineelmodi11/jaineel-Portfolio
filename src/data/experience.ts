@@ -2,10 +2,18 @@ import { Experience } from "@/types"
 
 export const experience: Experience[] = [
   {
+    id: "shopify",
+    role: "Software Developer Intern",
+    company: "Shopify",
+    period: "Incoming Winter 2027",
+    descriptions: [],
+    tags: [],
+  },
+  {
     id: "rbc",
     role: "Software Developer Intern",
     company: "Royal Bank of Canada (RBC)",
-    period: "May 2026 – Present",
+    period: "May 2026 – Dec 2026",
     descriptions: [
       "Client-facing REST APIs for the mortgage approval platform, spanning 10,000 applications.",
       "A Spring Boot service that validates mortgage documents against business rules, cutting manual effort 95%.",
