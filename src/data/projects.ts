@@ -2,6 +2,15 @@ import { Project } from "@/types"
 
 export const projects: Project[] = [
   {
+    id: "vision",
+    title: "Vision",
+    description:
+      "Final round at Hack the North 2026. A simulated market finds the problem you actually solve, then an AI investment committee argues over funding it.",
+    tech: ["Next.js", "TypeScript", "Three.js", "Gemini", "ElevenLabs"],
+    github: "https://github.com/jaineelmodi11/vision",
+    live: "https://vision-phi-lovat.vercel.app",
+  },
+  {
     id: "audiomark",
     title: "AudioMark",
     description:
