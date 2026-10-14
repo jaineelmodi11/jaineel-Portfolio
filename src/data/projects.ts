@@ -5,8 +5,8 @@ export const projects: Project[] = [
     id: "anemia",
     title: "Anemia from Eyelid Photos",
     description:
-      "Ongoing research for RBC Borealis's Let's SOLVE it program. Reproduced two published anemia classifiers, then showed that once leaked duplicate photos are removed, the 98% ViT does no better than guessing from the patient's country.",
-    tech: ["Python", "PyTorch", "ViT", "ResNet50", "scikit-learn"],
+      "Ongoing ML research with RBC Borealis's Let's SOLVE it program.",
+    tech: ["Python", "PyTorch"],
     github: "https://github.com/Mariaakhtar0035/iris-anemia-screening/tree/jaineel",
   },
   {
