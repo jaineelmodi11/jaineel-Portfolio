@@ -25,11 +25,11 @@ const instrument = Instrument_Serif({
 export const metadata: Metadata = {
   title: "Jaineel Modi, Software Developer",
   description:
-    "Software developer in Toronto. I co-built AudioMark, a practice player with 5,000+ active users, and section_loop, a Dart package for A-B looping, published on pub.dev.",
+    "Software developer in Toronto. I co-built AudioMark, a practice player with 5,000+ installs on Google Play, and section_loop, a Dart package for A-B looping, published on pub.dev.",
   openGraph: {
     title: "Jaineel Modi, Software Developer",
     description:
-      "Software developer in Toronto. AudioMark, section_loop, and an internship on RBC's mortgage approval platform team.",
+      "Software developer in Toronto. Interning at RBC, joining Shopify in winter 2027. Co-built AudioMark and wrote section_loop.",
     url: "https://jaineelmodi.com",
     siteName: "Jaineel Modi",
     locale: "en_CA",

@@ -3,8 +3,20 @@ export interface Experience {
   role: string
   company: string
   period: string
+  location?: string
   descriptions: string[]
   tags: string[]
+}
+
+export interface Education {
+  school: string
+  degree: string
+  period: string
+  location: string
+  /** Short facts set on one line: GPA, honours. */
+  notes: string[]
+  courses: string[]
+  activities: string[]
 }
 
 export interface Project {

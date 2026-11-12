@@ -23,8 +23,9 @@ export function Hero() {
           </h1>
 
           <p className="mt-10 max-w-xl text-lg leading-relaxed text-ink-soft">
-            I&apos;m on RBC&apos;s mortgage approval platform team writing Java and
-            Spring Boot APIs. On my own time I maintain{" "}
+            I&apos;m at RBC building the Java and Spring Boot services behind its
+            mortgage application system, and I join Shopify in winter 2027. On
+            my own time I maintain{" "}
             <a
               href="#work"
               className="link-rule text-ink"
@@ -67,7 +68,7 @@ export function Hero() {
             />
           </div>
           <figcaption className="caption mt-3">
-            Queen&apos;s University, Bachelor of Computer Science (AI)
+            Queen&apos;s University, Bachelor of Computing (Honours), AI
           </figcaption>
         </figure>
       </div>
@@ -77,7 +78,7 @@ export function Hero() {
         <div className="rule" />
         <blockquote className="py-10 lg:py-14 max-w-4xl">
           <p className="font-[family-name:var(--font-display)] text-ink leading-[1.1] tracking-[-0.01em] text-[clamp(30px,4.4vw,58px)]">
-            About 5,000 people practise to something I built.
+            Something I built has been installed more than 5,000 times.
           </p>
           <cite className="caption mt-5 block not-italic">
             AudioMark on Google Play
